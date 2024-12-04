@@ -1,13 +1,16 @@
-﻿using OpenQA.Selenium;
-using WebUIAutomation.Shared.Paths;
+﻿using WebUIAutomation.Shared;
+using WebUIAutomation.Shared.Pages;
 
 namespace WebUIAutomation.xUnit;
 
 public class SearchFunctionalityTests : IClassFixture<WebDriverFixture>
 {
-	private readonly IWebDriver driver;
+	private readonly HomePage _homePage;
 
-	public SearchFunctionalityTests(WebDriverFixture fixture) => this.driver = fixture.driver;
+	public SearchFunctionalityTests(WebDriverFixture fixture)
+	{
+		_homePage = new HomePage();
+	}
 
 	[Theory]
 	[InlineData("research")]
@@ -15,17 +18,11 @@ public class SearchFunctionalityTests : IClassFixture<WebDriverFixture>
 	[Trait("Category", "Search")]
 	public void VerifySearchFunctionality(string searchTerm)
 	{
-		driver.Navigate().GoToUrl(Constants.BaseUrl);
-		var searchButton = driver.FindElement(By.ClassName(Constants.SearchButtonClassName));
-		searchButton.Click();
-		var searchBar = driver.FindElement(By.ClassName(Constants.SearchBarClassName));
-		searchBar.SendKeys(searchTerm);
-		searchBar.SendKeys(Keys.Enter);
+		_homePage.NavigateTo();
+		var searchQuery = new SearchQuery.Builder().WithTerm(searchTerm).Build();
+		var searchResultsPage = _homePage.Search(searchQuery.Term);
 
-		Assert.Contains($"/?s={searchTerm.Replace(" ", "+")}", driver.Url);
-
-		var searchResults = driver.FindElements(By.ClassName(Constants.SearchResultsClassName));
-		bool resultsContainSearchTerm = searchResults.Any(result => result.Text.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
-		Assert.True(resultsContainSearchTerm, "Search results do not contain expected search term.");
+		Assert.Contains($"/?s={searchQuery.Term.Replace(" ", "+")}", WebDriverSingleton.Instance.Driver.Url);
+		Assert.True(searchResultsPage.ContainsSearchTerm(searchTerm), "Search results do not contain expected search term.");
 	}
 }

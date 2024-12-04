@@ -1,30 +1,29 @@
 ﻿using OpenQA.Selenium;
-using WebUIAutomation.Shared.Paths;
+using WebUIAutomation.Shared;
+using WebUIAutomation.Shared.Pages;
 
 namespace WebUIAutomation.xUnit;
 
 
 public class LanguageChangeTests : IClassFixture<WebDriverFixture>
 {
-	private readonly IWebDriver driver;
+	private readonly HomePage _homePage;
 
-	public LanguageChangeTests(WebDriverFixture fixture) => this.driver = fixture.driver;
+	public LanguageChangeTests(WebDriverFixture fixture)
+	{
+		_homePage = new HomePage();
+	}
 
 	[Fact]
 	[Trait("Category", "Language")]
 	public void VerifyLanguageChangeToLithuanian()
 	{
-		driver.Navigate().GoToUrl(Constants.BaseUrl);
+		_homePage.NavigateTo();
+		_homePage.SwitchToLithuanianLanguage();
 
-		var languageSwitcher = driver.FindElement(By.CssSelector(Constants.LanguageSwitcherCss));
-		languageSwitcher.Click();
+		Assert.Equal(Constants.LithuanianBaseUrl, WebDriverSingleton.Instance.Driver.Url);
 
-		var lithuanianOption = driver.FindElement(By.LinkText(Constants.LithuanianLanguage));
-		lithuanianOption.Click();
-
-		Assert.Equal(Constants.LithuanianBaseUrl, driver.Url);
-
-		var htmlTag = driver.FindElement(By.TagName("html"));
+		var htmlTag = WebDriverSingleton.Instance.Driver.FindElement(By.TagName("html"));
 		string langAttribute = htmlTag.GetAttribute("lang");
 
 		Assert.Equal("lt-LT", langAttribute);

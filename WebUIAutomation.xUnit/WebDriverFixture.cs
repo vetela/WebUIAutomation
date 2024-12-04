@@ -1,22 +1,16 @@
-﻿using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium;
+﻿using WebUIAutomation.Shared;
 
 namespace WebUIAutomation.xUnit;
 
 public class WebDriverFixture : IDisposable
 {
-	protected ThreadLocal<IWebDriver> _driver = new();
-	public IWebDriver driver => _driver.Value!;
-
 	public WebDriverFixture()
 	{
-		_driver.Value = new ChromeDriver();
-		_driver.Value.Manage().Window.Maximize();
+		WebDriverSingleton.Instance.Driver.Navigate().GoToUrl(Constants.BaseUrl);
 	}
 
 	public void Dispose()
 	{
-		_driver.Value?.Quit();
-		_driver.Value?.Dispose();
+		WebDriverSingleton.Instance.QuitDriver();
 	}
 }
