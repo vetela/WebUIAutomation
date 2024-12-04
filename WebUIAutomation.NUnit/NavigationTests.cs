@@ -18,13 +18,13 @@ public class NavigationTests : BaseTest
 	[Category("Navigation")]
 	public void VerifyAboutEHUPageLoadsCorrectly()
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
-		IWebElement aboutLink = driver.FindElement(By.XPath(XPaths.AboutLinkXPath));
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
+		IWebElement aboutLink = driver.FindElement(By.LinkText(Constants.AboutLink));
 		aboutLink.Click();
 
 		Assert.Multiple(() =>
 		{
-			Assert.That(driver.Url, Is.EqualTo($"{XPaths.BaseUrl}about/"));
+			Assert.That(driver.Url, Is.EqualTo($"{Constants.BaseUrl}about/"));
 			Assert.That(driver.Title, Is.EqualTo("About"));
 		});
 
@@ -38,18 +38,18 @@ public class NavigationTests : BaseTest
 	[TestCase("admissions")]
 	public void VerifySearchFunctionality(string searchTerm)
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
 
-		var searchButton = driver.FindElement(By.XPath(XPaths.SearchButtonXPath));
+		var searchButton = driver.FindElement(By.ClassName(Constants.SearchButtonClassName));
 		searchButton.Click();
 
-		var searchBar = driver.FindElement(By.XPath(XPaths.SearchBarXPath));
+		var searchBar = driver.FindElement(By.ClassName(Constants.SearchBarClassName));
 		searchBar.SendKeys(searchTerm);
 		searchBar.SendKeys(Keys.Enter);
 
 		Assert.That(driver.Url, Does.Contain($"/?s={searchTerm.Replace(" ", "+")}"), "Search query mismatch");
 
-		var searchResults = driver.FindElements(By.XPath(XPaths.SearchResultsXPath));
+		var searchResults = driver.FindElements(By.ClassName(Constants.SearchResultsClassName));
 		bool resultsContainSearchTerm = searchResults.Any(result => result.Text.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
 		Assert.That(resultsContainSearchTerm, Is.True, "Search results do not contain expected search term.");
 	}
@@ -58,15 +58,15 @@ public class NavigationTests : BaseTest
 	[Category("Language")]
 	public void VerifyLanguageChangeToLithuanian()
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
 
-		var languageSwitcher = driver.FindElement(By.XPath(XPaths.LanguageSwitcherXPath));
+		var languageSwitcher = driver.FindElement(By.CssSelector(Constants.LanguageSwitcherCss));
 		languageSwitcher.Click();
 
-		var lithuanianOption = driver.FindElement(By.XPath(XPaths.LithuanianOptionXPath));
+		var lithuanianOption = driver.FindElement(By.LinkText(Constants.LithuanianLanguage));
 		lithuanianOption.Click();
 
-		Assert.That(driver.Url, Is.EqualTo(XPaths.LithuanianBaseUrl), "The URL does not indicate the language has switched to Lithuanian.");
+		Assert.That(driver.Url, Is.EqualTo(Constants.LithuanianBaseUrl), "The URL does not indicate the language has switched to Lithuanian.");
 
 		var htmlTag = driver.FindElement(By.TagName("html"));
 		string langAttribute = htmlTag.GetAttribute("lang");

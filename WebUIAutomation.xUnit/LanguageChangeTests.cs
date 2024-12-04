@@ -14,15 +14,15 @@ public class LanguageChangeTests : IClassFixture<WebDriverFixture>
 	[Trait("Category", "Language")]
 	public void VerifyLanguageChangeToLithuanian()
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
 
-		var languageSwitcher = driver.FindElement(By.XPath(XPaths.LanguageSwitcherXPath));
+		var languageSwitcher = driver.FindElement(By.CssSelector(Constants.LanguageSwitcherCss));
 		languageSwitcher.Click();
 
-		var lithuanianOption = driver.FindElement(By.XPath(XPaths.LithuanianOptionXPath));
+		var lithuanianOption = driver.FindElement(By.LinkText(Constants.LithuanianLanguage));
 		lithuanianOption.Click();
 
-		Assert.Equal(XPaths.LithuanianBaseUrl, driver.Url);
+		Assert.Equal(Constants.LithuanianBaseUrl, driver.Url);
 
 		var htmlTag = driver.FindElement(By.TagName("html"));
 		string langAttribute = htmlTag.GetAttribute("lang");

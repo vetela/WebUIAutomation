@@ -15,16 +15,16 @@ public class SearchFunctionalityTests : IClassFixture<WebDriverFixture>
 	[Trait("Category", "Search")]
 	public void VerifySearchFunctionality(string searchTerm)
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
-		var searchButton = driver.FindElement(By.XPath(XPaths.SearchButtonXPath));
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
+		var searchButton = driver.FindElement(By.ClassName(Constants.SearchButtonClassName));
 		searchButton.Click();
-		var searchBar = driver.FindElement(By.XPath(XPaths.SearchBarXPath));
+		var searchBar = driver.FindElement(By.ClassName(Constants.SearchBarClassName));
 		searchBar.SendKeys(searchTerm);
 		searchBar.SendKeys(Keys.Enter);
 
 		Assert.Contains($"/?s={searchTerm.Replace(" ", "+")}", driver.Url);
 
-		var searchResults = driver.FindElements(By.XPath(XPaths.SearchResultsXPath));
+		var searchResults = driver.FindElements(By.ClassName(Constants.SearchResultsClassName));
 		bool resultsContainSearchTerm = searchResults.Any(result => result.Text.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
 		Assert.True(resultsContainSearchTerm, "Search results do not contain expected search term.");
 	}

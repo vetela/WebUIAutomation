@@ -13,11 +13,11 @@ public class AboutPageTests : IClassFixture<WebDriverFixture>
 	[Trait("Category", "Navigation")]
 	public void VerifyAboutEHUPageLoadsCorrectly()
 	{
-		driver.Navigate().GoToUrl(XPaths.BaseUrl);
-		var aboutLink = driver.FindElement(By.XPath(XPaths.AboutLinkXPath));
+		driver.Navigate().GoToUrl(Constants.BaseUrl);
+		var aboutLink = driver.FindElement(By.LinkText(Constants.AboutLink));
 		aboutLink.Click();
 
-		Assert.Equal($"{XPaths.BaseUrl}about/", driver.Url);
+		Assert.Equal($"{Constants.BaseUrl}about/", driver.Url);
 		Assert.Equal("About", driver.Title);
 	}
 }
