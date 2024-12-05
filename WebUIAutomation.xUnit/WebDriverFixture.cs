@@ -6,7 +6,7 @@ public class WebDriverFixture : IDisposable
 {
 	public WebDriverFixture()
 	{
-		WebDriverSingleton.Instance.Driver.Navigate().GoToUrl(Constants.BaseUrl);
+		WebDriverSingleton.Instance.Driver.Navigate().GoToUrl("https://en.ehu.lt/");
 	}
 
 	public void Dispose()

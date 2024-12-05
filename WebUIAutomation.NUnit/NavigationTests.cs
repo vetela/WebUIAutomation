@@ -31,11 +31,11 @@ public class NavigationTests
 
 		Assert.Multiple(() =>
 		{
-			Assert.That(WebDriverSingleton.Instance.Driver.Url, Is.EqualTo(Constants.AboutPageUrl));
-			Assert.That(aboutPage.GetTitle(), Is.EqualTo(Constants.About));
+			Assert.That(WebDriverSingleton.Instance.Driver.Url, Is.EqualTo("https://en.ehu.lt/about/"));
+			Assert.That(aboutPage.GetTitle(), Is.EqualTo("About"));
 		});
 
-		Assert.That(aboutPage.GetHeaderText(), Is.EqualTo(Constants.About));
+		Assert.That(aboutPage.GetHeaderText(), Is.EqualTo("About"));
 	}
 
 	[Test]
@@ -59,7 +59,7 @@ public class NavigationTests
 		_homePage.NavigateTo();
 		_homePage.SwitchToLithuanianLanguage();
 
-		Assert.That(WebDriverSingleton.Instance.Driver.Url, Is.EqualTo(Constants.LithuanianBaseUrl), "The URL does not indicate the language has switched to Lithuanian.");
+		Assert.That(WebDriverSingleton.Instance.Driver.Url, Is.EqualTo("https://lt.ehu.lt/"), "The URL does not indicate the language has switched to Lithuanian.");
 
 		var htmlTag = WebDriverSingleton.Instance.Driver.FindElement(By.TagName("html"));
 		string langAttribute = htmlTag.GetAttribute("lang");

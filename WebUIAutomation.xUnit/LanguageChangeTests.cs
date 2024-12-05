@@ -21,7 +21,7 @@ public class LanguageChangeTests : IClassFixture<WebDriverFixture>
 		_homePage.NavigateTo();
 		_homePage.SwitchToLithuanianLanguage();
 
-		Assert.Equal(Constants.LithuanianBaseUrl, WebDriverSingleton.Instance.Driver.Url);
+		Assert.Equal("https://lt.ehu.lt/", WebDriverSingleton.Instance.Driver.Url);
 
 		var htmlTag = WebDriverSingleton.Instance.Driver.FindElement(By.TagName("html"));
 		string langAttribute = htmlTag.GetAttribute("lang");

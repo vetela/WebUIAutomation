@@ -15,8 +15,8 @@ public class AboutPageTests : IClassFixture<WebDriverFixture>
 		_homePage.NavigateTo();
 		var aboutPage = _homePage.GoToAboutPage();
 
-		Assert.Equal(Constants.AboutPageUrl, WebDriverSingleton.Instance.Driver.Url);
-		Assert.Equal(Constants.About, aboutPage.GetTitle());
-		Assert.Equal(Constants.About, aboutPage.GetHeaderText());
+		Assert.Equal("https://en.ehu.lt/about/", WebDriverSingleton.Instance.Driver.Url);
+		Assert.Equal("About", aboutPage.GetTitle());
+		Assert.Equal("About", aboutPage.GetHeaderText());
 	}
 }
