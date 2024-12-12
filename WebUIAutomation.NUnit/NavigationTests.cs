@@ -4,7 +4,7 @@ using WebUIAutomation.Shared;
 using WebUIAutomation.Shared.Pages;
 using static WebUIAutomation.Shared.Logging;
 
-namespace WebUIAutomation.NUnit;
+namespace WebUIAutomation.NUnit_Tests;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Children)]

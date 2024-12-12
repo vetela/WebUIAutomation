@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.NUnit", "WebUIAutomation.NUnit\WebUIAutomation.NUnit.csproj", "{9748802E-630D-4081-9E6D-BACD2E610BA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.NUnit_Tests", "WebUIAutomation.NUnit\WebUIAutomation.NUnit_Tests.csproj", "{9748802E-630D-4081-9E6D-BACD2E610BA9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.Shared", "WebUIAutomation.Shared\WebUIAutomation.Shared.csproj", "{548375CF-1A16-497C-BEF4-5002869246FD}"
 EndProject
