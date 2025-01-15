@@ -1,0 +1,1598 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>Automation Test Results</title>
+ <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/commons/img/logo.png">
+ <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/css/spark-style.css" rel="stylesheet" />
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@78fa5a2421587b8228150e93142e5ba97178e85b/spark/js/jsontree.js"></script>
+ <style></style>
+</head>
+<body class="spa  standard">
+ <div class="app">
+  <div class="layout">
+   <div class="header navbar">
+ <div class="vheader">
+  <div class="nav-logo">
+   <a href="#">
+	 <div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/commons/img/logo.png')"></div>
+   </a>
+  </div>
+  <ul class="nav-left">
+   <li class="search-box">
+	<a class="search-toggle" href="#"><i class="search-icon fa fa-search"></i><i class="search-icon-close fa fa-close"></i></a>
+   </li>
+   <li class="search-input">
+    <input id="search-tests" class="form-control" type="text" placeholder="Search...">
+   </li>
+  </ul>
+  <ul class="nav-right">
+   <li class="m-r-10"><a href="#"><span class="badge badge-primary">Test Execution Report</span></a></li>
+   <li class="m-r-10">
+    <a href="#"><span class="badge badge-primary">15.01.2025 15:51:55</span></a>
+   </li>
+  </ul>
+ </div>
+</div>
+   <div class="side-nav">
+ <div class="side-nav-inner">
+  <ul class="side-nav-menu">
+   <li class="nav-item dropdown" onclick="toggleView('test-view')">
+    <a id="nav-test" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-list"></i></span>
+    </a>
+   </li>
+   <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+    <a id="nav-dashboard" class="dropdown-toggle" href="#">
+     <span class="ico"><i class="fa fa-bar-chart"></i></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+</div>
+
+   <div class="vcontainer">
+    <div class="main-content">
+     
+
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+      <ul class="tools pull-left">
+        <li><a href="#"><span class="font-size-14">Tests</span></a></li>
+      </ul>
+      <ul class="tools text-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+          <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+ <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>             <div class="dropdown-divider"></div>
+            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item" status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateBook_ShouldReturn201AndMatchInput</p>
+            <p class="text-sm">
+              <span>15:51:55</span> / <span>121,33 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">CreateBook_ShouldReturn201AndMatchInput</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:55</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:55</span>
+                  <span class='badge badge-default'>121,33 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Starting CreateBook test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Book creation returned status 201.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Book title matches input.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Book author matches input.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Book ISBN matches input.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Book published date matches input.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:55</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">CreateDuplicateBook_ShouldReturn409</p>
+            <p class="text-sm">
+              <span>15:51:56</span> / <span>180,13 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">CreateDuplicateBook_ShouldReturn409</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:56</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:56</span>
+                  <span class='badge badge-default'>180,13 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Starting CreateDuplicateBook test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Initial book created with ID: 1032e245-1521-40b2-bdf2-00bf287369bf        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Duplicate book creation returned status 409 as expected.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteBook_ShouldReturn204</p>
+            <p class="text-sm">
+              <span>15:51:56</span> / <span>193,63 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">DeleteBook_ShouldReturn204</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:56</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:56</span>
+                  <span class='badge badge-default'>193,63 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Starting DeleteBook test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Test book created with ID: b9ae3b78-cdcc-4640-af61-db30b09226ad        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Book deleted successfully with status 204.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:56</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteBookWithInvalidIdFormat_ShouldReturn400</p>
+            <p class="text-sm">
+              <span>15:51:57</span> / <span>73,39 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">DeleteBookWithInvalidIdFormat_ShouldReturn400</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:57</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:57</span>
+                  <span class='badge badge-default'>73,39 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Starting UpdateBookWithInvalidIdFormat test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Deleting a book with invalid ID format returns status 400.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteNonExistentBook_ShouldReturn404</p>
+            <p class="text-sm">
+              <span>15:51:57</span> / <span>135,98 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">DeleteNonExistentBook_ShouldReturn404</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:57</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:57</span>
+                  <span class='badge badge-default'>135,98 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Starting DeleteNonExistentBook test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Deleting a non-existent book returns status 404.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Starting UpdateBookWithNonExistentId test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:57</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetAllBooks_ShouldContainRequiredFields</p>
+            <p class="text-sm">
+              <span>15:51:58</span> / <span>142,95 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">GetAllBooks_ShouldContainRequiredFields</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:58</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:58</span>
+                  <span class='badge badge-default'>142,95 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Starting GetAllBooks_ShouldContainRequiredFields test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Getting all books returned status 200.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list is not empty.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'title'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'author'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+books list contains 'publishedDate'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetAllBooks_ShouldReturnList</p>
+            <p class="text-sm">
+              <span>15:51:58</span> / <span>99,67 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">GetAllBooks_ShouldReturnList</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:58</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:58</span>
+                  <span class='badge badge-default'>99,67 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Starting GetAllBooks_ShouldReturnList test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Getting all books returned status 200.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Books list is not empty.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:58</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetBookById_ShouldReturnBook</p>
+            <p class="text-sm">
+              <span>15:51:59</span> / <span>185,98 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">GetBookById_ShouldReturnBook</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:59</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:59</span>
+                  <span class='badge badge-default'>185,98 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Starting GetBookById test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Test book created with ID: 9740bb4f-8dcb-4dcc-b7e8-35f65ea89b0f        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Fetching book by ID returned status 200.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Response contains 'id'.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Returned book ID matches the requested ID.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Book title matches expected value.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Book isbn matches expected value.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetBookByInvalidIdFormat_ShouldReturn400</p>
+            <p class="text-sm">
+              <span>15:51:59</span> / <span>80,47 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">GetBookByInvalidIdFormat_ShouldReturn400</h5>
+                  <span class='badge badge-success'>15.01.2025 15:51:59</span>
+                  <span class='badge badge-danger'>15.01.2025 15:51:59</span>
+                  <span class='badge badge-default'>80,47 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Starting GetBookByInvalidIdFormat test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Fetching a a book with invalid ID format returns status 400.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:51:59</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetBookByNonExistentId_ShouldReturn404</p>
+            <p class="text-sm">
+              <span>15:52:00</span> / <span>136,22 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">GetBookByNonExistentId_ShouldReturn404</h5>
+                  <span class='badge badge-success'>15.01.2025 15:52:00</span>
+                  <span class='badge badge-danger'>15.01.2025 15:52:00</span>
+                  <span class='badge badge-default'>136,22 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Starting GetBookByNonExistentId test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Fetching a non-existent book returns status 404.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBook_ShouldUpdateAndValidateData</p>
+            <p class="text-sm">
+              <span>15:52:00</span> / <span>186,3 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">UpdateBook_ShouldUpdateAndValidateData</h5>
+                  <span class='badge badge-success'>15.01.2025 15:52:00</span>
+                  <span class='badge badge-danger'>15.01.2025 15:52:00</span>
+                  <span class='badge badge-default'>186,3 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Starting UpdateBook test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Test book created with ID: 67038654-e803-4204-8936-aba60470263c        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Book updated successfully with status 204.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Fetching updated book returns status 200.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Book title matches expected value.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Book author matches expected value.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:00</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBookWithInvalidIdFormat_ShouldReturn400</p>
+            <p class="text-sm">
+              <span>15:52:01</span> / <span>80,93 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">UpdateBookWithInvalidIdFormat_ShouldReturn400</h5>
+                  <span class='badge badge-success'>15.01.2025 15:52:01</span>
+                  <span class='badge badge-danger'>15.01.2025 15:52:01</span>
+                  <span class='badge badge-default'>80,93 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Starting UpdateBookWithInvalidIdFormat test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Updating a a book with invalid ID format returns status 400.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+        <li class="test-item" status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">UpdateBookWithNonExistentId_ShouldReturn404</p>
+            <p class="text-sm">
+              <span>15:52:01</span> / <span>141,79 ms</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+            <div class="detail-head">
+              <div class="p-v-10">
+                <div class="info">
+                  <h5 class="test-status text-pass">UpdateBookWithNonExistentId_ShouldReturn404</h5>
+                  <span class='badge badge-success'>15.01.2025 15:52:01</span>
+                  <span class='badge badge-danger'>15.01.2025 15:52:01</span>
+                  <span class='badge badge-default'>141,79 ms</span>
+                  &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+                  <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+                  <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+                  <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+                </div>
+              </div>
+            </div>
+
+
+<div class="detail-body mt-4">
+
+
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Starting UpdateBookWithNonExistentId test        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Updating a non-existent book returns status 404.        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>янв. 15, 2025 15:52:01</td>
+        <td>
+Test passed        </td>
+      </tr>
+  </tbody>
+</table></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="test-content scrollable">
+    <div class="test-content-tools">
+      <ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+    </div>
+    <div class="test-content-detail"><div class="detail-body"></div></div>
+  </div>
+</div>
+
+     
+
+<div class="container-fluid p-4 view dashboard-view">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Started</p>
+          <h3>15.01.2025 15:51:55</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0">Ended</p>
+          <h3>15.01.2025 15:52:01</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-pass">Tests Passed</p>
+          <h3>13</h3>
+      </div></div>
+    </div>
+    <div class="col-md-3">
+      <div class="card"><div class="card-body">
+          <p class="m-b-0 text-fail">Tests Failed</p>
+          <h3>0</h3>
+      </div></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Tests</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='parent-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='1%'>
+            <b>13</b> tests passed
+            </small>
+          </div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> tests failed, 
+            <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h6 class="card-title">Log events</h6>
+        </div>
+        <div class="card-body">
+          <div class="">
+            <canvas id='events-analysis' width='115' height='90'></canvas>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div><small data-tooltip='0%'><b>133</b> events passed</small></div>
+          <div>
+            <small data-tooltip='0%'><b>0</b> events failed, 
+            <b data-tooltip='%'>14</b> others
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-md-12">
+    <div class="card"><div class="card-header"><p>Timeline</p></div>
+      <div class="card-body pt-0"><div>
+        <canvas id="timeline" height="120"></canvas>
+      </div></div>
+    </div>
+  </div></div>
+  <script>
+	var timeline = { "CreateBook_ShouldReturn201AndMatchInput":121,3334,"CreateDuplicateBook_ShouldReturn409":180,1316,"DeleteBook_ShouldReturn204":193,6301,"DeleteBookWithInvalidIdFormat_ShouldReturn400":73,3944,"DeleteNonExistentBook_ShouldReturn404":135,9802,"GetAllBooks_ShouldContainRequiredFields":142,9511,"GetAllBooks_ShouldReturnList":99,668,"GetBookById_ShouldReturnBook":185,9757,"GetBookByInvalidIdFormat_ShouldReturn400":80,468,"GetBookByNonExistentId_ShouldReturn404":136,2155,"UpdateBook_ShouldUpdateAndValidateData":186,3028,"UpdateBookWithInvalidIdFormat_ShouldReturn400":80,9347,"UpdateBookWithNonExistentId_ShouldReturn404":141,7901 };
+  </script>
+  <div class="row">
+      <div class="col-md-4 sysenv-container">
+      <div class="card">
+        <div class="card-header"><p>System/Environment</p></div>
+        <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+          <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Operating System</td>
+              <td>Microsoft Windows NT 10.0.26100.0</td>
+            </tr>
+            <tr>
+              <td>.NET Version</td>
+              <td>8.0.11</td>
+            </tr>
+            <tr>
+              <td>Machine Name</td>
+              <td>DESKTOP-R8INVL5</td>
+            </tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var statusGroup = {
+    parentCount: 13,
+    childCount: 0,
+    grandChildCount: 0,
+    eventsCount: 147,
+
+passParent:13,failParent:0,warningParent:0,skipParent:0,    
+passChild:0,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:0,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:133,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:14,  };
+</script>
+
+    </div>
+   </div>
+  </div>
+ </div>
+ <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c439bdbc7bade3d85af3b90e9e69c30ebc87445f/spark/js/spark-script.js"></script>
+<script type='text/javascript'></script>
+</body>
+</html>

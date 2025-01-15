@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.Shared", "W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.xUnit", "WebUIAutomation.xUnit\WebUIAutomation.xUnit.csproj", "{3DE32E5C-3A01-428B-A273-8C2CB460888D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUIAutomation.NUnit_API", "WebUIAutomation.NUnit_API\WebUIAutomation.NUnit_API.csproj", "{C044C85A-92EC-4B5E-85F3-E0D7B7E2F04B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3DE32E5C-3A01-428B-A273-8C2CB460888D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DE32E5C-3A01-428B-A273-8C2CB460888D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DE32E5C-3A01-428B-A273-8C2CB460888D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C044C85A-92EC-4B5E-85F3-E0D7B7E2F04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C044C85A-92EC-4B5E-85F3-E0D7B7E2F04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C044C85A-92EC-4B5E-85F3-E0D7B7E2F04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C044C85A-92EC-4B5E-85F3-E0D7B7E2F04B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
